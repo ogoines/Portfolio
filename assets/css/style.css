@@ -43,22 +43,20 @@ body {
   
  /* .header a.active {
     background-color: none;
-    color: white;
+    colo<r: white;
   }
  */
   
   .header-right {
     float: right;
   }
-  .header-left {
+  .header-left { width: 100%;
+    height: auto;
+    max-width;
     color:indigo
   }
   
- /*image scales up and down */
-  .responsive {
-    width: 100%;
-    height: auto;
-  }
+
   
    @media screen and (max-width: 500px) {
     .header a {
@@ -71,4 +69,42 @@ body {
       float: none;
     }
 }
+ 
+.main-content {
   
+    margin-left:20px;
+ }
+
+/*positioning and styling for main-section */
+.main-info {
+    display:inline-block;
+    padding:none;
+    margin-left:-20px;
+   /* margin-right:-20; */
+}  
+/*styles articles in main content section */
+.interests, .work, .projects {
+    margin-bottom: 20px;
+    padding:15px;
+    color: #ffffff;
+    background-color: #1e1e1e;
+}
+/*responsive images-scale up and down */
+.interests img, .work img, .projects img {
+  width: 100%;
+  height: auto;
+  padding-bottom:20px;
+  max-width:200px;
+}
+
+.interests h3, .work h3, .projects h3{
+    margin-bottom: 20px;
+    
+}
+
+footer {
+    color:black;
+    text-align:center;
+    
+    
+}
