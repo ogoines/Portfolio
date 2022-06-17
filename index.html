@@ -1,71 +1,86 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>My Profile Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>My Profile Page</title>
 </head>
 
 <body>
-<!--displays banner with jump links to  -->
- <div class="header">
-   <div class="header-left">
-   <a href="#default" class="logo">Hi, I'm Orsha</a>
-</div>
-<div class="header-right">
-   <nav class = "crumbs">
-    <ul>
-<!--jumps to mid--> 
-        <a href="#about-me">about me</a>
-      <a href="#what-i-am-up-to">what I am up to</a>
-      <a href="#contact-me">contact me</a>
-    </ul> 
-   </nav> 
-</div>
-</div>
-<div style="padding-left:20px">
- <!--Responsive Header--> 
+  <!--displays banner with jump links to  -->
+  <div class="header">
+    <div class="header-left">
+      <a href="#default" class="logo">Hi, I'm Orsha. </a>
+    </div>
+    <div class="header-right">
+      <nav class="crumbs">
+        <ul>
+          <!--jumps to main-content sections-->
+          <a href="#about-me">about me</a>
+          <a href="#what-i-do">what I do</a>
+          <a href="#contact-me">contact me</a>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div style="padding-left:20px">
+    <!--Responsive Header-->
     <h1>Nice to meet you!!!</h1>
-</div>
+  </div>
+  <main>
+    <img src="./assets/images/strong.jpg" alt="woman pulling weight" class="orsha">
+    <div class="main-content">
+      <!--contains and displays articles in main -->
+       <section class="my-info">
+         <article id="about-me" class="interests">
+           <h>About me</h>
+           <p>
+            I am a runner, upcoming developer,
+            self-taught artist and community leader...
+            not necessarily in that order.
+           </p>
+        </article>
+        <article id="what-i-do" class="work">
+          <h>What I am up to</h>
+          <p>
+            Designing project websites while,enrolled in
+            UPenn's Bootcamp Class
+          </p>
+        </article>
+      <section class="my-projects">        
+            <h>My first website!</h>
+            <p>
+              Horiseon Marketing Accessibility Website
+            </p>
+            <img src="./assets/images/Horiseon.png" alt="workers around desk"/> 
+           
+          
+      </section>
+      
+        <!--displays footer with email address contact info -->
+      </section>
+    </div>
+   
+   
+    <article id="contact-me" class =contact>
+      <h2>Contact me</h2>
+      <a href="mailto:orshamarie@gmail.com">orshamarie@gmail.com</a>
+  </main>
+
+
 
 </body>
- <img src="./assets/images/strong.jpg" alt="woman pulling weight" class="orsha"> 
- <div class="main-content">
-    <!--contains and displays articles in main -->  
-           <section class="main-info">
-             <article id="about-me" class="interests">
-               <h3>About me</h3>
-               <p>
-                   I am a runner,  upcoming developer, self-taught-artist and community leader...not necessarily in that order.
-               </p>
-             </article>
-             <article id="what-i-am-up-to" class="work">
-                <h3>What I am up to</h3>
-                <p>
-                    Designing project websites while enrolled in UPenn's Bootcamp Class
-                </p>
-             </article>
-             <article id="projects" class="projects">
-                <h3>My Projects</h3>
-                <img src="./assets/images/racing.jpg" alt="women holding race sign"/>
-                <h3>Project</h3>
-                <img src="./assets/images/artwork.jpg" alt="beach painting" />
-            </article>
-           </section>     
- </div>         
-            
-            
-            
+
+
+
 <footer>
-            
-  <!--displays footer with contact info -->
-              <article id="contact-me" class =contact></article>
-              <h1>Contact me</h1>
-              <a href="mailto:orshamarie@gmail.com">orshamarie@gmail.com</a>
-            
+
+
+
+
+
 
 </footer>
-</html>
 
-  
+</html>
