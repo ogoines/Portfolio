@@ -1,19 +1,57 @@
-/* global attributes*/
-
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+    padding:0;
+    margin:0;
+  }
+  /*   */
+ 
+  
 
 
-body { 
+
+
+  /*grid column sizing choices*/
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }  
+  /*styling for body section*/
+  body { 
     margin: 0;
     font-family:  Arial, Helvetica, sans-serif;
     background-color:#080807;
     color:#f1e6da;
   }
-  
+  /*banner styling*/
   .header {
     overflow: hidden;
     background-color: #f1e6da;
@@ -21,25 +59,26 @@ body {
     padding-bottom: 20px;
   }
   
+  /*sizing and styling for text on left side of header*/
   .header a {
     float: left;
     color: black;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 25px; 
+    font-size: 20px; 
     line-height: 25px;
     border-radius: 4px;
   }
   
   .header a.logo {
     font-size:50px;
-    font-weight: bold;
+    font-weight:bolder;
   }
   
   .header a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(192, 179, 179);
   }
   
  .header-right {
@@ -57,68 +96,60 @@ body {
       display: block;
       text-align: left;
     }
-    
     .header-right {
       float: none;
     }
 }
 
-.main-content {
-  margin-left:0px;
-  margin-bottom: none; 
-  padding:12px;
-  color: #ffffff;
-  background-color: #080807;
-  font-size:18px;
-}
-.main-content h{
-  font-size: 25px;
-
-}
 
 /*positioning and styling for main-section */
 .my-info {
     display:inline-block;
     padding:none;
     margin-left:none;
-    margin-right:none; 
+    margin-right:none;
+    font-size:15px; 
+    
   
 }  
-/*styles articles in main content section */
-.interests, .work, .my-projects, .contact {
-    margin-bottom: none; 
-    padding:18px;
-    color: #ffffff;
-    background-color: #080807;
-  } 
 
-.interests h, .work h, .projects h, .contact h{
+/*sizing for heading in  information section*/
+.my-info h1{
+    font-size:25px;
+}
+/*aligns  header to left for section */
+.my-first-website h2{
+  text-align:left;
+
+}
+/*sizing for for first website image*/
+.my-first-website img, .my-other-websites img{
+  width: 100%;
+  height:auto;
+  padding-bottom:none;
+  padding-top:none;
 }
 
-/*responsive images-scale up and down */
-/*.interests img, .work img {
-    width: 100%;
-    height: auto;
-    padding-top:none;
-    padding-bottom:none; 
+.my-first-website,.my-other-websites{
+  color: black;
+  background-color:#f1e6da;
+  padding:18px;
+}
+
+/*styling for info section*/
+.interests, .work{ 
+   padding:18px;  
+    color: black;
+    background-color:#f1e6da;
     
-} */
-.orsha img, .my-projects img {
-    width:100%;
-    height:auto;
-    padding-bottom:none;
-    padding-top:none;
+}
+
+/*styling and placement for contact section*/
+.contact-footer{
+  color: black;
+  background-color:#f1e6da;
+  text-align:center;
 }
 
 
-.interests h, .work h, .my-projects h {
-  text-align:left; 
-} 
 
-
-
- 
-/*Centers contact info section*/
-.contact {
-    text-align:center;
-}

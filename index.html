@@ -1,86 +1,84 @@
-<html lang="en-us">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>My Profile Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="./assets/css/style.css">
+<title>My Profile Page</title>
 </head>
 
 <body>
-  <!--displays banner with jump links to  -->
-  <div class="header">
-    <div class="header-left">
-      <a href="#default" class="logo">Hi, I'm Orsha. </a>
+    <!--displays banner with jump links to  -->
+<div class="header">
+      <div class="header-left">
+        <a href="#default" class="logo">Hi, I'm Orsha </a>
+</div>
+      <div class="header-right">
+        <nav class="crumbs">
+          <ul>
+            <!--jumps to main-content sections--> 
+            <a href="#about-me">about me</a>
+            <a href="#what-i-do">what I do</a>
+            <a href="#contact-me">contact me</a>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="header-right">
-      <nav class="crumbs">
-        <ul>
-          <!--jumps to main-content sections-->
-          <a href="#about-me">about me</a>
-          <a href="#what-i-do">what I do</a>
-          <a href="#contact-me">contact me</a>
-        </ul>
-      </nav>
+    <div style="padding-left:20px">
+      <!--Responsive Header-->
+       <h1>Nice to meet you!!!</h1>
     </div>
-  </div>
-  <div style="padding-left:20px">
-    <!--Responsive Header-->
-    <h1>Nice to meet you!!!</h1>
-  </div>
-  <main>
-    <img src="./assets/images/strong.jpg" alt="woman pulling weight" class="orsha">
-    <div class="main-content">
-      <!--contains and displays articles in main -->
-       <section class="my-info">
-         <article id="about-me" class="interests">
-           <h>About me</h>
-           <p>
-            I am a runner, upcoming developer,
-            self-taught artist and community leader...
-            not necessarily in that order.
-           </p>
-        </article>
-        <article id="what-i-do" class="work">
-          <h>What I am up to</h>
-          <p>
-            Designing project websites while,enrolled in
-            UPenn's Bootcamp Class
-          </p>
-        </article>
-      <section class="my-projects">        
-            <h>My first website!</h>
-            <p>
-              Horiseon Marketing Accessibility Website
-            </p>
-            <img src="./assets/images/Horiseon.png" alt="workers around desk"/> 
-           
-          
-      </section>
-      
-        <!--displays footer with email address contact info -->
-      </section>
-    </div>
-   
-   
-    <article id="contact-me" class =contact>
-      <h2>Contact me</h2>
-      <a href="mailto:orshamarie@gmail.com">orshamarie@gmail.com</a>
-  </main>
+</header>   
+<main>
 
+<div class="row">
+ <!-- <div class="col-4 menu>">-->
+  <img src="./assets/images/strong.jpg" alt="woman pulling weight" class="orsha">  
+</div>
+  <div class="col-3 menu>"> 
+    <section class="my-info">
+      <article id="about-me" class="interests">
+        <h1>About me</h1>
+        
+        <p>
+         I am a runner, personal trainer, upcoming developer,
+         self-taught artist and motivator...
+         not necessarily in that order
+        </p>
+     </article>
+    
+    <article id="what-i-do" class="work">
+       <h1>What I am doing</h1>
+       
+       <p>
+         Designing project websites while, enrolled in
+         UPenn's Full Stack Developer Bootcamp Class
+       </p>
+     </article>
+   </section> 
+</div>
+<div class="col-6 menu"> 
+    <div class="my-first-website">
+      <h2>My First Website!</h2>
+      <img src="./assets/images/first-webpage.png" alt="workers around desk"/> 
+    </div>
+</div>
+<div class="col-3 menu">
+    <div class="my-other-websites">
+      <h2>My Other Websites<h2>
+      <img src="./assets/images/artwork2.png"  alt="tropical painting"/> 
+      <img src="./assets/images/2-Cellos.png" alt="2 cellos musicians"/>
+    </div>
+</div>
+<div class="col-12 menu">
+    <div id="contact-me" class="contact-footer">
+       <h2>Contact Information</h2> 
+       <a href="mailto:orshamarie@gmail.com">orshamarie@gmail.com</a>
+    </div> 
+</div>
 
 
 </body>
-
-
-
-<footer>
-
-
-
-
-
-
-</footer>
-
 </html>
+
+
