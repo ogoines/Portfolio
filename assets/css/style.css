@@ -1,14 +1,10 @@
+
+/*global attributes*/
 * {
     box-sizing: border-box;
     padding:0;
     margin:0;
   }
-  /*   */
- 
-  
-
-
-
 
   /*grid column sizing choices*/
   [class*="col-"] {
@@ -34,10 +30,7 @@
     display: table;
   }
 
-
-
-
-
+/*grid settings sizing for media display*/
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
@@ -101,7 +94,6 @@
     }
 }
 
-
 /*positioning and styling for main-section */
 .my-info {
     display:inline-block;
@@ -113,12 +105,17 @@
   
 }  
 
-/*sizing for heading in  information section*/
+/*font sizing for in  information section*/
 .my-info h1{
     font-size:25px;
+    font-weight:bold;
 }
+
+
 /*aligns  header to left for section */
-.my-first-website h2{
+.my-info h2, .my-first-website h2, .my-other-website h2{
+  font-size: 25px;
+  font-weight:bold;
   text-align:left;
 
 }
@@ -129,7 +126,7 @@
   padding-bottom:none;
   padding-top:none;
 }
-
+/*styling and padding for website sections*/
 .my-first-website,.my-other-websites{
   color: black;
   background-color:#f1e6da;
@@ -145,11 +142,20 @@
 }
 
 /*styling and placement for contact section*/
-.contact-footer{
+.contact-footer{ 
   color: black;
   background-color:#f1e6da;
   text-align:center;
 }
 
-
-
+/*styling and placement for footer section*/
+.footer-contact{
+  padding-top:20px;
+  padding-bottom:20px;
+  color: black;
+  background-color:#f1e6da;
+  text-align:center;
+  }
+  .footer-contact p{
+    margin:10px;
+  }
