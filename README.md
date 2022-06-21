@@ -20,7 +20,9 @@ While styling the website I set the width to maximum on headers and the height t
  - (https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - W3 Schools online -https://www.w3schools.com/default.asp
  
-## Deployment
+## Deployment Link
 To deploy this visit 
 https://ogoines.github.io/PortfolioProject/
 
+## Screenshot Link
+![Project2](https://user-images.githubusercontent.com/105450668/174691795-deda3c1e-6628-4cd2-a147-df67f8e87142.png)
